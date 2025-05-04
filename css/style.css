@@ -5,6 +5,10 @@ SemiBold 600
 Bold 700
 ExtraBold 800
 */
+
+
+/* Общие стили */
+
 body{
     margin: 0;
     font-family: "Manrope", sans-serif; 
@@ -19,6 +23,11 @@ body{
 a {
     color: #DEDEDE;
     text-decoration: none; /*убрать подчеркивание*/
+    transition: opacity 0.3s;
+}
+
+a:hover {
+    opacity: 0.6;
 }
 
 
@@ -35,6 +44,9 @@ a {
     align-items: center;
     gap: 11px;
 }
+
+/*Header */
+
 
 .header {
     padding: 20px 0;
@@ -57,4 +69,49 @@ a {
 .header__link {
     font-weight: 700;
     font-size: 18px;
+}
+
+/* Main */
+
+
+.main {
+
+}
+
+/* Welcome */
+
+.welcome {
+
+}
+
+.container {
+
+}
+
+.welcome__desc {
+
+}
+
+.welcome__title {
+    width: 500px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.19;
+    color: #DEDEDE;
+}
+
+.welcome__text {
+
+}
+
+.btn {
+
+}
+
+.welcome__btn {
+
+}
+
+.welcome__img {
+
 }
