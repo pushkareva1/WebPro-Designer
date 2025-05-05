@@ -45,6 +45,34 @@ a:hover {
     gap: 11px;
 }
 
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 48px; 
+
+    font-size: 18px;
+    color: #ffffff;
+
+    background: #9D9D9D;
+    border-radius: 4px;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn::before {
+    content: "";
+    width: 21px;
+    height: 16px;
+
+    background-image: url("./images/mail.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /*Header */
 
 
@@ -81,10 +109,15 @@ a:hover {
 /* Welcome */
 
 .welcome {
-
+margin-top: 160px;
 }
 
-.container {
+.welcome .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
 
 }
 
@@ -94,18 +127,17 @@ a:hover {
 
 .welcome__title {
     width: 500px;
+    margin-bottom: 24px;
     font-weight: 700;
     font-size: 54px;
     line-height: 1.19;
     color: #DEDEDE;
+    margin-top: 0;
 }
 
 .welcome__text {
-
-}
-
-.btn {
-
+    width: 395px;
+    margin-bottom: 88px;
 }
 
 .welcome__btn {
@@ -113,5 +145,8 @@ a:hover {
 }
 
 .welcome__img {
-
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-right: 105px;
 }
