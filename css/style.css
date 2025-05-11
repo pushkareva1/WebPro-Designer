@@ -20,6 +20,10 @@ body{
     letter-spacing: -0.5px;
 }
 
+img {
+    max-width: 100%;
+}
+
 a {
     color: #DEDEDE;
     text-decoration: none; /*убрать подчеркивание*/
@@ -67,10 +71,10 @@ a:hover {
     width: 21px;
     height: 16px;
 
-    background-image: url("./images/mail.svg");
+    background-image: url("../images/mail.svg");
     background-size: contain;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
 }
 
 /*Header */
@@ -149,4 +153,93 @@ margin-top: 160px;
     height: 400px;
     border-radius: 50%;
     margin-right: 105px;
+}
+
+/* Works */
+
+.works {
+    margin-top: 140px;
+}
+
+.container {
+
+}
+
+.works__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin-bottom: 80px;
+
+    font-family: 'Manrope';
+    font-weight: 700;
+    letter-spacing: 1.5;
+    text-transform: uppercase;
+    color: #DEDEDE;
+    
+    border: none;
+    background-color: transparent;
+    opacity: 0.7;
+
+
+
+}
+
+.works__icon {
+
+}
+
+.works__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+
+}
+
+.work {
+    /* height: 888px; */
+    height: 700px;
+    position: relative;
+}
+
+.work:nth-child(even) {
+    position: relative;
+    top: 140px;
+}
+
+.work:hover {
+    opacity: 1;
+}
+
+
+.work__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.work__name {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 40px;
+
+
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.4s;
+}
+
+.work:hover .work__name {
+    opacity: 1;
 }
