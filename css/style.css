@@ -318,3 +318,37 @@ margin-top: 160px;
 .socials__img {
     display: flex;
 }
+
+/*media*/
+
+@media (max-width: 1100px) {
+    .welcome__img {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 950px) {
+        .welcome {
+        margin-top: 70px;
+    }
+
+    .welcome .container {
+        flex-direction: column-reverse;
+        gap: 65px;
+    }
+
+    .welcome__title {
+        width: auto;
+    }
+
+    .welcome__text {
+        width: auto;
+        margin-bottom: 50px;
+    }
+
+    .welcome__desc {
+        text-align: center;
+    }
+
+
+}
